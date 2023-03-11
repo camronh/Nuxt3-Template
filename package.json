@@ -5,8 +5,7 @@
     "dev": "npx nuxi dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "create-api": "node ./deploy/create-api.js"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "nuxt": "^3.2.3"
