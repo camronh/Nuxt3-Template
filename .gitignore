@@ -9,3 +9,5 @@ dist
 .DS_Store
 
 resources.json
+# Local Netlify folder
+.netlify

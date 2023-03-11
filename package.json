@@ -5,9 +5,11 @@
     "dev": "npx nuxi dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "npx netlify init"
   },
   "devDependencies": {
+    "netlify-cli": "^13.1.2",
     "nuxt": "^3.2.3"
   },
   "dependencies": {

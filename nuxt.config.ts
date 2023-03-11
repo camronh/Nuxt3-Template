@@ -6,7 +6,4 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  nitro: {
-    preset: "netlify-edge",
-  },
 });
