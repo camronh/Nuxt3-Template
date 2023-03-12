@@ -1,28 +1,41 @@
-# Nuxt 3 Minimal Starter
+# Full Stack Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a template for a full stack application. Makes it really easy to start up a new project and deploy it to Netlify. API and API calls are included.
+
+### Stack
+
+- **Front End**: Vue 3
+- **Framework**: Nuxt 3
+- **Styling**: Vuetify 3
+- **API**: Nuxt 3 Nitro
+- **Hosting**: Netlify
 
 ## Setup
-
-Make sure to install the dependencies:
 
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
+## Directory Structure
 
-Start the development server on http://localhost:3000
+```
+.
+├── composable // Utils. Put any functions in here, for example typed API calls.
+├── pages // All your views. Each page will automatically be added to the router.
+├── components // Reusable components. Automatically imported.
+├── public // Static files.
+├── server // API server. Nested API folder
+│   ├── api // API endpoints
+
+```
+
+## Start Development Server
+
+Start the development server. The API is included in the development server.
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,13 +43,21 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Deployment
+
+When you're ready to deploy, you can deploy to Netlify. Be sure you have pushed your repo and any changes to GitHub.
+
+```bash
+yarn deploy
+```
+
+This will ask you to log into your accounts and will produce a link to your deployed site.
